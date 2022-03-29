@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+
+:root {
+    /* Primary */
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    /* Neutral */
+    --transparent-white: hsla(0, 0%, 100%, 0.75); /* Paragraphs */
+    --very-light-gray: hsl(0, 0%, 95%); /* Background, headings, buttons */
+}
+
+/* MAIN DIV */
+
+.container-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5.5em auto;
+    width: 90%;
+    font-size: 1rem;
+}
+
+/* COLUMNS STYLE */
+
+.sedans-column, .suv-column, .luxury-column {
+    width: 19em;
+    padding: 2.5em 2em 2em 3em;
+}
+
+.sedans-column {
+    background-color: var(--bright-orange);
+    border-radius: 0.5em 0 0 0.5em;
+}
+
+.suv-column {
+    background-color: var(--dark-cyan);
+}
+
+.luxury-column {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 0.5em 0.5em 0;
+}
+
+/* TEXT-STYLE */
+
+h1 {
+    font-family: 'Big Shoulders Display';
+    color: var(--very-light-gray);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 0.2em;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--transparent-white);
+    font-weight: 400;
+    margin-top: 1.6rem;
+    line-height: 1.5em;
+    font-size: 1em;
+}
+
+/* IMG-PROPERTIES */
+
+img {
+    margin-top: -0.5em;
+    margin-bottom: 1.5em;
+}
+
+
+/* BUTTON PROPERTIES */
+
+.btn-sedan {
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--bright-orange);
+    font-weight: 400;
+    font-size: 0.9em;
+    width: 9rem;
+    height: 3rem;
+    padding: 0.5em;
+    border-style: solid;
+    border-radius: 100px;
+    border-color: var(--very-light-gray);
+    margin-top: 5.4rem;
+}
+
+.btn-sedan:hover {
+    cursor: pointer;
+    color: var(--very-light-gray);
+    background-color: var(--bright-orange);
+}
+
+.btn-suv {
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--dark-cyan);
+    font-weight: 400;
+    font-size: 0.9em;
+    width: 9rem;
+    height: 3rem;
+    padding: 0.5em;
+    border-style: solid;
+    border-radius: 100px;
+    border-color: var(--very-light-gray);
+    margin-top: 5.4rem;
+}
+
+.btn-suv:hover {
+    cursor: pointer;
+    color: var(--very-light-gray);
+    background-color: var(--dark-cyan);
+}
+
+.btn-luxury {
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--very-dark-cyan);
+    font-weight: 400;
+    font-size: 0.9em;
+    width: 9rem;
+    height: 3rem;
+    padding: 0.5em;
+    border-style: solid;
+    border-radius: 100px;
+    border-color: var(--very-light-gray);
+    margin-top: 5.4rem;
+}
+
+.btn-luxury:hover {
+    cursor: pointer;
+    color: var(--very-light-gray);
+    background-color: var(--very-dark-cyan);
+}
+
+/* FOOTER */
+
+footer {
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--bright-orange);
+    position: relative;
+    bottom: 2em;
+    text-align: center;
+}
+
+a:visited {
+    color: var(--dark-cyan);
+}
+
+/* RESPONSIVE DESIGN (MOBILE FIRST) */
+
+@media (max-width: 375px) {
+
+    .container-div {
+        flex-direction: column;
+    }
+
+    .sedans-column {
+        border-radius: 0.5em 0.5em 0 0;
+    }
+    
+    .luxury-column {
+        border-radius: 0 0 0.5em 0.5em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        margin-bottom: 0;
+        font-size: 0.9em;
+    }
+
+    .btn-sedan, .btn-suv, .btn-luxury {
+        margin-top: 2em;
+    }
+
+}
