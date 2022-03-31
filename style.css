@@ -18,12 +18,17 @@
 
 /* MAIN DIV */
 
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* CONTAINER DIV */
+
 .container-div {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5.5em auto;
-    width: 90%;
     font-size: 1rem;
 }
 
@@ -95,6 +100,7 @@ img {
     cursor: pointer;
     color: var(--very-light-gray);
     background-color: var(--bright-orange);
+    transition-duration: 0.5s;
 }
 
 .btn-suv {
@@ -115,6 +121,7 @@ img {
     cursor: pointer;
     color: var(--very-light-gray);
     background-color: var(--dark-cyan);
+    transition-duration: 0.5s;
 }
 
 .btn-luxury {
@@ -135,6 +142,7 @@ img {
     cursor: pointer;
     color: var(--very-light-gray);
     background-color: var(--very-dark-cyan);
+    transition-duration: 0.5s;
 }
 
 /* FOOTER */
@@ -142,8 +150,10 @@ img {
 footer {
     font-family: 'Lexend Deca', sans-serif;
     color: var(--bright-orange);
-    position: relative;
-    bottom: 2em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
     text-align: center;
 }
 
