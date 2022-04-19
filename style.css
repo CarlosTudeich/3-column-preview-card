@@ -165,6 +165,10 @@ a:visited {
 
 @media (max-width: 375px) {
 
+    main {
+        margin: 2.5rem;
+    }
+
     .container-div {
         flex-direction: column;
     }
@@ -190,4 +194,7 @@ a:visited {
         margin-top: 2em;
     }
 
+    footer {
+        bottom: -610px;
+    }
 }
